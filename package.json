@@ -1,15 +1,25 @@
 {
-  "name": "todo-list",
+  "name": "the-node",
   "version": "1.0.0",
-  "description": "crud nodejs with mysql",
+  "description": "practices and funcionality test",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "keywords": [
     "nodejs",
     "crud"
   ],
   "author": "frank-hz",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }

@@ -25,7 +25,7 @@ Requeriments
 ### clone this repo
 $ git clone https://github.com/frank-hz/the-node
 
-# go in folder
+### go in folder
 $ cd the-node
 
 ### install dependencies
@@ -36,11 +36,8 @@ $ npm run dev
 
 
 
-## Authors
-
-  - **Frank HZ** - *Provided README Template* -
-    [PurpleBooth](https://github.com/frank-hz)
-
+## Author
+**Frank HZ**
 
 ## License
 

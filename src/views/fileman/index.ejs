@@ -1,0 +1,69 @@
+<%- include('../layout/header'); -%>
+
+<p class="view-title pt-1 pb-2">Fileman</p>
+
+<div class="fileman-layout">
+    <form class="fileman-form-card">
+        <div class="fileman-form-title">
+            <i class="lni lni-plus"></i> New file
+        </div>
+        <div id="drop_container" class="fileman-drop-area">
+            <input type="file" id="file-input" hidden>
+            <div class="drop-icon">
+                <i class="lni lni-upload"></i>
+            </div>
+            <div id="button_file" class="drop-button">
+                Drag & Drop or <span class="text-primary">Choose</span> File
+            </div>
+            <div class="drop-subtext">[.txt, .pdf, .image*]</div>
+        </div>
+        <div id="file_message" class="file-message-area">
+            
+        </div>
+        <div class="fileman-list-files">
+            <div class="file-item">
+                <div class="file-icon">
+                    <i class="lni lni-empty-file"></i>
+                </div>
+                <div class="file-data">
+                    Lorem ipsum dolor sit.txt
+                </div>
+                <div class="file-option">
+                    <button class="file-button" title="Preview">
+                        <i class="lni lni-play"></i>
+                    </button>
+                    <button class="file-button" title="Remove">
+                        <i class="lni lni-close"></i>
+                    </button>
+                </div>
+                <div class="file-progress">
+                    <span></span>
+                </div>
+            </div>
+            <div class="file-item">
+                <div class="file-icon">
+                    <i class="lni lni-empty-file"></i>
+                </div>
+                <div class="file-data">
+                    provident animi expedita.txt
+                </div>
+                <div class="file-option">
+                    <button class="file-button" title="Preview">
+                        <i class="lni lni-play"></i>
+                    </button>
+                    <button class="file-button" title="Remove">
+                        <i class="lni lni-close"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <div class="fileman-preview">
+        PREVIEW
+    </div>
+</div>
+
+
+<script src="js/fileman.index.js"></script>
+<%- include('../layout/footer'); -%>

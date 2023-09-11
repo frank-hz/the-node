@@ -1,14 +1,26 @@
-const http = require('http');
+const express = require('express');
+const app = express();
+const path = require('path');
 
-const host = '127.0.0.1';
-const port = 4000;
-const server = http.createServer((req,res) => {
-    res.statusCode = '200';
-    res.setHeader('Content-Type','text/plain');
-    res.end('Welcome to nodeJs');
+
+// Settings
+app.set('port', process.env.PORT || 3000);
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
+// Routes
+const routes = require('./routes.js');
+app.use(routes);
+
+
+// Static Files
+app.use(express.static(path.join(__dirname,'public')));
+
+// Midlewares
+
+
+
+
+app.listen(app.get('port'), () => {
+    console.log(`live in ${app.get('port')}`);
 });
-
-server.listen(port,host,()=>{
-    console.log(`Server on ${host}:${port}`);
-});
-
